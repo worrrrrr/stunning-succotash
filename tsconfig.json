@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"target": "es2018",
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"allowJs": true,
+		"checkJs": true,
+		"typeRoots": ["app/**/types", "node_modules/@types"],
+		"paths": {
+			"@components/*": ["./app/components/*"],
+			"@translations/*": ["./app/translations/*"],
+			"@configs/*": ["./app/configs/*"],
+			"@app/*": ["./app/*"]
+		}
+	},
+	"include": ["app/**/*"],
+	"exclude": ["node_modules/*", "dist/*", "scripts/*"]
+}
